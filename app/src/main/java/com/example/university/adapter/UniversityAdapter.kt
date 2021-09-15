@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.university.ItemClickListener
+import com.example.university.interfaces.ItemClickListener
 import com.example.university.databinding.ItemUniBinding
 import com.example.university.model.UniversityListItem
 
@@ -17,7 +17,7 @@ class UniversityAdapter(
     private var uniResponseList: List<UniversityListItem>
     private lateinit var binding: ItemUniBinding
     private var context: Context
-    private val clickListener:ItemClickListener
+    private val clickListener: ItemClickListener
 
 
     fun setUniList(uniResponseList: List<UniversityListItem>) {
