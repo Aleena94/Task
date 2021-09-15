@@ -8,14 +8,14 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.university.ItemClickListener
+import com.example.university.interfaces.ItemClickListener
 import com.example.university.adapter.UniversityAdapter
 import com.example.university.databinding.ActivityUniversityBinding
 import com.example.university.services.isOnline
 import com.example.university.viewmodel.UniversityViewModel
 import org.koin.android.ext.android.inject
 
-class UniversityActivity : AppCompatActivity(),ItemClickListener{
+class UniversityActivity : AppCompatActivity(), ItemClickListener {
     private lateinit var binding: ActivityUniversityBinding
     private lateinit var context: Context
     private lateinit var adapter: UniversityAdapter

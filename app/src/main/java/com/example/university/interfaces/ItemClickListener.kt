@@ -1,4 +1,4 @@
-package com.example.university
+package com.example.university.interfaces
 
 interface ItemClickListener {
     fun onClick(s: String)
